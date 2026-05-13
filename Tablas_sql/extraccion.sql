@@ -115,8 +115,8 @@ INNER JOIN dw.dim_producto p ON p.erp_tmpl_id = sol.product_id
 
 -- Filtros de calidad de datos:
 WHERE so.date_order IS NOT NULL      -- Fecha válida
-  AND sol.product_uom_qty > 0        -- Cantidad positiva (ventas reales)
-  AND sol.price_unit IS NOT NULL;    -- Precio definido
+    AND sol.product_uom_qty > 0        -- Cantidad positiva (ventas reales)
+    AND sol.price_unit IS NOT NULL;    -- Precio definido
 
 -- ********************************
 -- VERIFICACIÓN RÁPIDA
